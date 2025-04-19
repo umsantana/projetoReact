@@ -1,15 +1,12 @@
+import AddTasks from "./Components/AddTasks";
+import Tasks from "./Components/Tasks";
+
 function App() {
-  let message = "Olá mundo!";
   return (
     <div>
-      <h1>{message}</h1>
-      <button
-        onClick={() => {
-          message = "Fui clicado";
-        }}
-      >
-        Mudar mensagem
-      </button>
+      <h1>Gerenciado de Tarefas</h1>
+      <AddTasks />
+      <Tasks />
     </div>
   );
 }
